@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #70c5ce;
+  font-family: Arial, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+#menu-container {
+  text-align: center;
+}
+
+#start-button {
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #ffcc00;
+  color: #000;
+  border: 2px solid #0b236a;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#start-button:hover {
+  background-color: #0b236a;
+  transform: scale(1.1);
+  border: 2px solid #ffcc00;
+  color: #ffffff;
+}
+
+#start-button:active {
+  background-color: #0b236a;
+}
+
+#game-container {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  background-color: #0b236a;
+  background-image: url("images/estrellas.webp");
+  background-size: cover;
+  background-repeat: repeat;
+  overflow: hidden;
+  border: 2px solid #000;
+}
+
+#bird {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-image: url("images/bird.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+
+.pipe {
+  position: absolute;
+  width: 50px;
+  background-color: rgb(244, 215, 99);
+}
+
+.pipe-upper {
+  height: 150px;
+  top: 0;
+}
+
+.pipe-lower {
+  height: 200px;
+  bottom: 0;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+}
